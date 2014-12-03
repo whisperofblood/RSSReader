@@ -29,6 +29,12 @@ public class NewsInstances extends XMLInstance {
         }
     }
 
+    public void clearListData(){
+        if (newsInstanceSet != null){
+            newsInstanceSet.clear();
+        }
+    }
+
     public NewsInstance getNewsInst(int position) {
         return newsInstanceSet.get(position);
     }
